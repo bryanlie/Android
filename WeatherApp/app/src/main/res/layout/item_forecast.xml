@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/spacing_xlarge"
+              android:background="?attr/selectableItemBackground"
+              android:gravity="center_vertical">
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:src="@mipmap/ic_launcher"
+            android:id="@+id/icon"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:layout_marginRight="@dimen/spacing_xlarge">
+        <TextView
+                android:id="@+id/dateText"
+                android:text="May 14, 2015"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:text="Light Rain"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionText"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+        <TextView
+                android:text="30"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maxTemp"/>
+        <TextView
+                android:text="15"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minTemp"/>
+    </LinearLayout>
+</LinearLayout>
