@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="371dp"
+        android:layout_height="622dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="312dp"
+            android:layout_height="86dp"
+            android:padding="24dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="200dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="100dp"
+            android:text="@string/question_text"/>
+
+        <LinearLayout
+            android:layout_width="254dp"
+            android:layout_height="97dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="242dp">
+
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:text="@string/true_button" />
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="@string/false_button"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="350dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="4dp"/>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
