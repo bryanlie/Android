@@ -1,0 +1,37 @@
+1. /dev/kvm permission denied
+
+https://stackoverflow.com/questions/37300811/android-studio-dev-kvm-device-permission-denied
+
+As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first sudo apt install qemu-kvm.
+
+To check the ownership of /dev/kvm use
+
+ls -al /dev/kvm
+
+The user was root, the group kvm. To check which users are in the kvm group, use
+
+grep kvm /etc/group
+
+This returned
+
+kvm:x:some_number:
+
+on my system: as there is nothing rightwards of the final :, there are no users in the kvm group.
+
+To add your user to the kvm group, you could use
+
+sudo adduser $USER kvm
+
+which adds the user to the group, and check once again with grep kvm /etc/group. 
+
+This is how I got it to work in Ubuntu 18.04
+
+sudo apt install qemu-kvm
+
+Add your user to kvm group using:
+
+sudo adduser <Replace with username> kvm
+
+If still showing permission denied:
+
+sudo chown <Replace with username> /dev/kvm
