@@ -1,12 +1,14 @@
 # Android development in Kotlin, Jetpack Compose
 
+## developer.android.com/codelabs
 1. Dice Roller
+2. Lemonade
 
    Developer.android.com
 
    https://developer.android.com/courses/android-basics-compose/course
 
-2. Coda Pizza
+## Coda Pizza
 
    Android Programming: The Big Nerd Ranch Guide (5th Edition)
 
