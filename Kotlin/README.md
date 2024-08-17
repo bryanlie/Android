@@ -4,6 +4,7 @@
 1. Dice Roller
 2. Lemonade
 3. Tip Time
+4. Affirmations
 
    Developer.android.com
 
