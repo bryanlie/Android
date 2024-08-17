@@ -3,6 +3,7 @@
 ## developer.android.com/codelabs
 1. Dice Roller
 2. Lemonade
+3. Tip Time
 
    Developer.android.com
 
