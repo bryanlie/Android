@@ -18,7 +18,7 @@ import static android.Manifest.permission.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String speechSubscriptionKey = "519d6bb408194bd8a8199809227e5172";
+    private static String speechSubscriptionKey = "abc123xyz";
     private static String serviceRegion = "eastus";
 
     @Override
