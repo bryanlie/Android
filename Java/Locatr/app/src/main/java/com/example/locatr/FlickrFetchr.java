@@ -20,7 +20,7 @@ public class FlickrFetchr {
 
     private static final String TAG = "FlickrFetchr";
 
-    private static final String API_KEY = "b76a0b5a1f1ed3659ea18e5b1ee6e56f";
+    private static final String API_KEY = "acb123xyzf";
     private static final String FETCH_RECENTS_METHOD = "flickr.photos.getRecent";
     private static final String SEARCH_METHOD = "flickr.photos.search";
     private static final Uri ENDPOINT = Uri.parse("https://api.flickr.com/services/rest").buildUpon()
